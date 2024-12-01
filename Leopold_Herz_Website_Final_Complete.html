@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopold Herz und das Rätsel der Illusion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        body {
+            font-family: 'Special Elite', Courier, monospace;
+            background: url('Antikes_Papier_Exakt_A4_Kein_Weiß.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #2e2b25;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('Titelkarte.jpg') no-repeat center center/cover;
+            height: 50vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        header h1, header p {
+            z-index: 2;
+            position: relative;
+            text-shadow: 1px 1px 3px #000;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.3em;
+        }
+        header .button {
+            margin-top: 15px;
+            background-color: #8b5a2b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        header .button:hover {
+            background-color: #6b4220;
+            transform: scale(1.05);
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #c1a165;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            line-height: 1.8;
+        }
+        section h2 {
+            color: #8b5a2b;
+            font-size: 1.8em;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #8b5a2b;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #6b4220;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #2e2b25;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            border-top: 2px solid #8b5a2b;
+        }
+        .donation-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .donation-section a {
+            background-color: #8b5a2b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .donation-section a:hover {
+            background-color: #6b4220;
+            transform: scale(1.05);
+        }
+        .music-controls {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .music-controls button {
+            background-color: transparent;
+            color: #8b5a2b;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+        .music-controls button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Leopold Herz und das Rätsel der Illusion</h1>
+            <p>London, 1921: Ein Abenteuer im Schatten der Zaubergilde.</p>
+            <a href="#start" class="button">Starte jetzt</a>
+        </div>
+    </header>
+    <section id="story">
+        <h2>Die Geschichte</h2>
+        <p><i>„London, 1921 – Nebel umhüllt die Stadt. Mutige Ermittler wagen sich in die Schatten, um das größte Geheimnis der Zaubergilde zu lüften.“</i></p>
+        <p>London ist ein Ort der Magie und Geheimnisse. Die legendären Zaubergilden wachen über uralte Geheimnisse. 
+        Doch als ein berühmter Illusionist während einer Show auf mysteriöse Weise verschwindet, 
+        liegt es an Detektiv Leopold Herz, den Fall zu lösen und die dunklen Machenschaften aufzudecken. 
+        Die Rätsel führen durch geheime Botschaften, mystische Symbole und verborgene Orte, die nur die Mutigsten entdecken können.</p>
+    </section>
+    <section class="telegram-note">
+        <h2>Wichtiger Hinweis</h2>
+        <p>Für das vollständige Spielerlebnis benötigst du die Telegram-App. Stelle sicher, dass Telegram auf deinem Gerät installiert ist, um Rätselhinweise zu erhalten.</p>
+    </section>
+    <section class="accessories-section">
+        <h2>Spielzubehör</h2>
+        <p>Alle notwendigen Materialien, wie Fotos, Texte und Rätsel, findest du in der Spielanleitung. Bitte drucke die Unterlagen aus und bereite sie gemäß der Anleitung vor.</p>
+        <a href="Leopold_zubehoer.pdf" class="button" download>Spielzubehör herunterladen</a>
+    </section>
+    <section class="donation-section">
+        <h2>Unterstütze dieses Projekt</h2>
+        <p>Das Spiel ist kostenlos, aber wenn es dir gefallen hat, kannst du mich mit einem Kaffee (3 EUR) unterstützen. Vielen Dank!</p>
+        <a href="https://paypal.me/LeopoldHerz/3" target="_blank">Jetzt spenden</a>
+    </section>
+    <section class="music-controls">
+        <audio id="background-music" loop autoplay>
+            <source src="mystic-melody.mp3" type="audio/mpeg">
+            Dein Browser unterstützt keine Audiodateien.
+        </audio>
+        <button onclick="toggleMusic()">🔊 Musik aus</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Leopold Herz | Ein Abenteuer von Ibrahim Rezgua</p>
+    </footer>
+    <script>
+        const music = document.getElementById('background-music');
+        let isPlaying = true;
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+                document.querySelector('.music-controls button').innerText = '🎵 Musik ein';
+            } else {
+                music.play();
+                document.querySelector('.music-controls button').innerText = '🔊 Musik aus';
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>
