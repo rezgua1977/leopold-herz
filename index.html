@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://rezgua1977.github.io/leopold-herz/">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap">
     <style>
+        /* Grundlegendes Seitenlayout */
         body {
             font-family: 'Special Elite', Courier, monospace;
             background: url('Antikes_Papier_Exakt_A4_Kein_Weiß.png') no-repeat center center fixed;
@@ -45,6 +46,8 @@
             z-index: 2;
             text-shadow: 2px 2px 4px #000;
         }
+
+        /* Haupt-Sections mit hellem Hintergrund */
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -59,15 +62,26 @@
             border-bottom: 2px solid #8b5a2b;
             padding-bottom: 5px;
         }
+
+        /* Allgemeine Button-Klasse */
         .button {
-            display: inline-block;
             background-color: #8b5a2b;
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             margin-top: 10px;
             border-radius: 5px;
+            display: inline-block; /* Standard, damit es "knöpfig" aussieht */
         }
+
+        /* Zusätzliche Klasse für mittige Buttons */
+        .centered-button {
+            display: block;       /* Damit margin: 0 auto funktioniert */
+            margin: 10px auto;    /* Zentriert den Button */
+            width: fit-content;   /* Passt die Breite an den Inhalt an (nicht in allen Browsern gleich unterstützt) */
+        }
+
+        /* Footer */
         footer {
             background-color: rgba(255, 255, 255, 0.9);
             text-align: center;
@@ -123,12 +137,16 @@
     <section>
         <h2>Spielzubehör herunterladen</h2>
         <p>Alle wichtigen Unterlagen findest du hier:</p>
-        <a href="Leopold Herz-zubehoer.pdf" class="button" download>Spielzubehör herunterladen</a>
+        <a href="Leopold Herz-zubehoer.pdf" class="button centered-button" download>
+            Spielzubehör herunterladen
+        </a>
+
         <p>Hast du Schwierigkeiten oder bist du in den Rätseln festgefahren?</p>
-        <a href="lösung.pdf" class="button" download>Lösung herunterladen</a>
+        <a href="lösung.pdf" class="button centered-button" download>
+            Lösung herunterladen
+        </a>
     </section>
 
-    <!-- NEU: Sektion für das E-Book -->
     <section>
         <h2>E-Book zum Abenteuer</h2>
         <p>
@@ -136,13 +154,17 @@
             hier das begleitende E-Book herunter, in dem du mehr über die Hintergründe 
             und die vollständige Geschichte erfährst.
         </p>
-        <a href="Leopold Herz_ebook.pdf" class="button" download>E-Book herunterladen</a>
+        <a href="Leopold Herz_ebook.pdf" class="button centered-button" download>
+            E-Book herunterladen
+        </a>
     </section>
 
     <section>
         <h2>Unterstütze dieses Projekt</h2>
         <p>Hat dir das Spiel gefallen? Unterstütze uns mit einem Kaffee!</p>
-        <a href="https://paypal.me/LeopoldHerz/3" target="_blank" class="button">Kaffee spendieren (3 EUR)</a>
+        <a href="https://paypal.me/LeopoldHerz/3" target="_blank" class="button centered-button">
+            Kaffee spendieren (3 EUR)
+        </a>
     </section>
 
     <section>
@@ -151,7 +173,9 @@
             <source src="mystic-melody.mp3" type="audio/mpeg">
             Dein Browser unterstützt keine Audiodateien.
         </audio>
-        <button onclick="toggleMusic()" class="button">🔊 Musik an/aus</button>
+        <button onclick="toggleMusic()" class="button centered-button">
+            🔊 Musik an/aus
+        </button>
     </section>
 
     <footer>
@@ -166,6 +190,7 @@
 
     <script>
         const music = document.getElementById('background-music');
+
         function toggleMusic() {
             if (music.paused) {
                 music.play();
@@ -174,7 +199,7 @@
             }
         }
 
-        // Spamschutz E-Mail
+        // Spamschutz für die E-Mail
         document.getElementById('email').innerHTML = '<a href="mailto:rezgua1977[at]gmail.com">rezgua1977[at]gmail.com</a>'.replace(/\[at\]/g, '@');
     </script>
 </body>
