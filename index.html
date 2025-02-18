@@ -133,7 +133,10 @@
 
     <footer>
         <p>&copy; 2025 Ibrahim Rezgua – Alle Rechte vorbehalten</p>
-        <p><strong>Impressum:</strong> Ibrahim Rezgua, Heinrich-Heine-Ring 18, 30629 Hannover | E-Mail: rezgua1977@gmail.com</p>
+        <p><strong>Impressum:</strong><br>
+            Ibrahim Rezgua, Heinrich-Heine-Ring 18, 30629 Hannover<br>
+            E-Mail: <span id="email"></span>
+        </p>
         <p><strong>Haftungsausschluss:</strong> Trotz sorgfältiger Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
         <p><strong>Urheberrecht:</strong> Die durch den Betreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung.</p>
     </footer>
@@ -147,6 +150,9 @@
                 music.pause();
             }
         }
+
+        // Spamschutz E-Mail
+        document.getElementById('email').innerHTML = '<a href="mailto:rezgua1977[at]gmail.com">rezgua1977[at]gmail.com</a>'.replace(/\[at\]/g, '@');
     </script>
 </body>
 </html>
