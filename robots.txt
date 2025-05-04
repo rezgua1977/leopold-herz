@@ -1,0 +1,8 @@
+# robots.txt für Leopold Herz – Escape-Game
+# Erlaubt allen Suchmaschinen den vollständigen Zugriff auf die Seite
+
+User-agent: *
+Disallow:
+
+# Sitemap zur besseren Indexierung durch Google & Co.
+Sitemap: https://rezgua1977.github.io/leopold-herz/sitemap.xml
